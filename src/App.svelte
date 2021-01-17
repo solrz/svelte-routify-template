@@ -8,5 +8,5 @@
   }
 </style>
 
-<h1>Hello {world}</h1>
+<h1 class="border border-current rounded p-4 m-4">Hello {world}</h1>
 <p>Open App.svelte in your editor and change something to see HMR in action</p>
