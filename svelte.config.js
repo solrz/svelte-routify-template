@@ -1,4 +1,12 @@
+const path = require('path');
+const { mdsvex } = require('mdsvex');
 const { postcss } = require('svelte-preprocess');
 module.exports = {
-  preprocess: [postcss()],
+  extensions: ['.svelte', '.svx'],
+  preprocess: [
+    mdsvex({
+      layout: path.join(__dirname, 'src', 'layouts', 'MdsvexLayout.svelte'),
+    }),
+    postcss()
+  ],
 };
